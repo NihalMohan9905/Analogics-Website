@@ -95,4 +95,3 @@ Chatbot configuration is documented in CHATBOT_SETUP.md.
 
 Deployment
 The production build outputs to the default Vite dist/ directory. See DEPLOYMENT_INSTRUCTIONS.txt for environment-specific steps.
->>>>>>> 76ed3ba6907ef89ac513006a9d5478e980e585db

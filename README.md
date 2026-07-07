@@ -101,4 +101,3 @@ GitHub: https://github.com/NihalMohan9905
 
 ---
 
-© 2026 Nihal Mohan. All rights reserved.

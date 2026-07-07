@@ -1,97 +1,104 @@
-# Analogics Website
+# C2P Website
 
-Marketing site for Analogics with product and solution pages, interactive UI components, and a contact flow.
+A modern and responsive company website developed using React.js. The project is designed to provide a clean user interface, fast performance, and an engaging user experience.
 
-## Highlights
+## Features
 
-- React 19 + Vite 7 front end
-- Tailwind CSS and custom component styles
-- Framer Motion animations
-- D3 map visualization for service centers
-- Optional chatbot integration
+- Responsive design for desktop, tablet, and mobile devices
+- Modern and clean user interface
+- React.js component-based architecture
+- Easy to customize and maintain
+- Optimized performance
+- Fast loading pages
 
 ## Tech Stack
 
-- React, React Router
-- Vite
-- Tailwind CSS
-- Framer Motion
-- D3 Geo
-- EmailJS
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Node.js
+- npm
 
 ## Project Structure
 
-- src/components: reusable UI and interactive components
-- src/pages: routed pages (Home, Products, Solutions, About, Contact)
-- src/data: content data for products and solutions
-- public: static assets and brochures
-
-## Getting Started
-
-1. Install dependencies:
-
-```bash
-npm install
+```
+c2p-website/
+│── public/
+│── src/
+│   ├── components/
+│   ├── assets/
+│   ├── App.js
+│   └── index.js
+│── package.json
+│── README.md
 ```
 
-2. Start the dev server:
+## Installation
+
+Clone the repository:
 
 ```bash
-npm run dev
+git clone https://github.com/NihalMohan9905/C2P-website.git
 ```
 
-3. Build for production:
+Navigate to the project directory:
 
 ```bash
-npm run build
+cd C2P-website
 ```
 
-4. Preview the production build:
-
-```bash
-npm run preview
-```
-
-## Chatbot Setup
-
-Chatbot configuration is documented in [CHATBOT_SETUP.md](CHATBOT_SETUP.md).
-
-## Deployment
-
-The production build outputs to the default Vite `dist/` directory. See [DEPLOYMENT_INSTRUCTIONS.txt](../DEPLOYMENT_INSTRUCTIONS.txt) for environment-specific steps.
-=======
-Analogics Website
-Marketing site for Analogics with product and solution pages, interactive UI components, and a contact flow.
-
-Highlights
-React 19 + Vite 7 front end
-Tailwind CSS and custom component styles
-Framer Motion animations
-D3 map visualization for service centers
-Optional chatbot integration
-Tech Stack
-React, React Router
-Vite
-Tailwind CSS
-Framer Motion
-D3 Geo
-EmailJS
-Project Structure
-src/components: reusable UI and interactive components
-src/pages: routed pages (Home, Products, Solutions, About, Contact)
-src/data: content data for products and solutions
-public: static assets and brochures
-Getting Started
 Install dependencies:
-npm install
-Start the dev server:
-npm run dev
-Build for production:
-npm run build
-Preview the production build:
-npm run preview
-Chatbot Setup
-Chatbot configuration is documented in CHATBOT_SETUP.md.
 
-Deployment
-The production build outputs to the default Vite dist/ directory. See DEPLOYMENT_INSTRUCTIONS.txt for environment-specific steps.
+```bash
+npm install
+```
+
+## Running the Project
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The application will be available at:
+
+```
+http://localhost:3000
+```
+
+## Production Build
+
+Generate an optimized production build:
+
+```bash
+npm run build
+```
+
+The production files will be generated inside the `build` folder.
+
+## Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Starts the development server |
+| `npm run build` | Creates a production build |
+| `npm test` | Runs the test suite |
+| `npm run eject` | Ejects Create React App configuration |
+
+## Repository
+
+GitHub Repository:
+
+**https://github.com/NihalMohan9905/C2P-website**
+
+## Author
+
+**Nihal Mohan**
+
+GitHub: https://github.com/NihalMohan9905
+
+---
+
+© 2026 Nihal Mohan. All rights reserved.

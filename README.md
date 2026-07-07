@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Analogics Website
 
 Marketing site for Analogics with product and solution pages, interactive UI components, and a contact flow.

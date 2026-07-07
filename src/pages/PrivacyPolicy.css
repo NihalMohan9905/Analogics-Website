@@ -1,0 +1,138 @@
+/* ================================
+   Privacy Policy Page - Analogics Website
+   ================================ */
+
+.privacy-policy-page {
+  min-height: 100vh;
+}
+
+.privacy-policy-hero {
+  position: relative;
+  padding: 120px 0 64px;
+  overflow: hidden;
+}
+
+.privacy-policy-hero__background {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  z-index: -1;
+}
+
+.privacy-policy-hero__background::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.privacy-policy-hero__content {
+  max-width: 740px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--white);
+}
+
+.privacy-policy-hero__subtitle {
+  display: inline-block;
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.privacy-policy-hero__title {
+  font-family: var(--font-primary);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  margin-bottom: var(--spacing-md);
+  color: var(--white);
+}
+
+.privacy-policy-hero__description {
+  max-width: 640px;
+  color: var(--gray-200);
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+.privacy-policy-hero__lead {
+  max-width: 920px;
+  color: var(--gray-300);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  margin-top: var(--spacing-sm);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.privacy-policy-content {
+  padding-top: 0;
+  padding-bottom: var(--spacing-2xl);
+}
+
+.privacy-policy-card {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(27, 79, 158, 0.12);
+  border-radius: var(--radius-xl);
+  padding: clamp(24px, 4vw, 40px);
+  box-shadow: 0 24px 60px rgba(10, 36, 72, 0.12);
+}
+
+.privacy-policy-section + .privacy-policy-section {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid rgba(27, 79, 158, 0.12);
+}
+
+.privacy-policy-section h2 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-dark);
+  font-family: var(--font-primary);
+  font-size: var(--text-2xl);
+}
+
+.privacy-policy-section p {
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+
+.privacy-policy-subsection {
+  margin-top: var(--spacing-lg);
+}
+
+.privacy-policy-subsection h3 {
+  margin-bottom: 8px;
+  color: var(--secondary-dark);
+  font-size: var(--text-lg);
+}
+
+.privacy-policy-meta {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+  margin-bottom: var(--spacing-sm);
+}
+
+.privacy-policy-list {
+  margin: var(--spacing-sm) 0 0;
+  padding-left: 22px;
+}
+
+.privacy-policy-list li {
+  margin-bottom: 8px;
+  color: var(--gray-700);
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .privacy-policy-hero {
+    padding-top: 120px;
+  }
+
+  .privacy-policy-card {
+    padding: 20px;
+  }
+}

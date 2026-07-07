@@ -1,0 +1,23 @@
+/* ================================
+   TypeWriter Component Styles
+   ================================ */
+
+.typewriter {
+  display: inline;
+}
+
+.typewriter__cursor {
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+  color: var(--primary);
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}

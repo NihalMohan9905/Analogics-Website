@@ -1,0 +1,225 @@
+/* ================================
+   Testimonials Styles - Analogics Website
+   ================================ */
+
+.testimonials {
+  position: relative;
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-4xl) var(--spacing-2xl);
+  box-shadow: var(--shadow-2xl);
+  overflow: hidden;
+}
+
+.testimonials::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+.testimonials__container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials__quote-icon {
+  font-size: 3rem;
+  color: var(--accent);
+  opacity: 0.3;
+  margin-bottom: var(--spacing-lg);
+}
+
+.testimonials__content {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+
+/* Rating */
+.testimonials__rating {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-lg);
+}
+
+.testimonials__star {
+  font-size: var(--text-xl);
+  color: rgba(255, 255, 255, 0.2);
+  transition: var(--transition-fast);
+}
+
+.testimonials__star--filled {
+  color: var(--accent);
+}
+
+/* Text */
+.testimonials__text {
+  font-size: var(--text-2xl);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-2xl);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Author */
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-lg);
+}
+
+.testimonials__author-info {
+  text-align: center;
+}
+
+.testimonials__author-name {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  color: var(--white);
+}
+
+.testimonials__author-position {
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+}
+
+.testimonials__author-company {
+  color: var(--accent-light);
+}
+
+/* Navigation */
+.testimonials__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  z-index: 2;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.testimonials__nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--accent);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.testimonials__nav--prev {
+  left: var(--spacing-md);
+}
+
+.testimonials__nav--next {
+  right: var(--spacing-md);
+}
+
+.testimonials__nav svg {
+  font-size: var(--text-xl);
+}
+
+/* Dots */
+.testimonials__dots {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-2xl);
+}
+
+.testimonials__dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-normal);
+  padding: 0;
+}
+
+.testimonials__dot:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+
+.testimonials__dot--active {
+  background: var(--accent);
+  width: 32px;
+  border-radius: var(--radius-full);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonials {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+  }
+
+  .testimonials__quote-icon {
+    font-size: 2rem;
+  }
+
+  .testimonials__text {
+    font-size: var(--text-lg);
+    line-height: 1.6;
+  }
+
+  .testimonials__author-name {
+    font-size: var(--text-lg);
+  }
+
+  .testimonials__author-position {
+    font-size: var(--text-sm);
+  }
+
+  .testimonials__nav {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonials__nav--prev {
+    left: var(--spacing-xs);
+  }
+
+  .testimonials__nav--next {
+    right: var(--spacing-xs);
+  }
+
+  .testimonials__nav svg {
+    font-size: var(--text-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    padding: var(--spacing-xl) var(--spacing-md);
+  }
+
+  .testimonials__text {
+    font-size: var(--text-base);
+  }
+
+  .testimonials__nav {
+    width: 35px;
+    height: 35px;
+  }
+}

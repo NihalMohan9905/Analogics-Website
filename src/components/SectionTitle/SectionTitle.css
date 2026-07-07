@@ -1,0 +1,71 @@
+/* ================================
+   Section Title Styles
+   ================================ */
+
+.section-title {
+  max-width: 700px;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.section-title--center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title--left {
+  text-align: left;
+}
+
+.section-title--right {
+  text-align: right;
+  margin-left: auto;
+}
+
+.section-title__subtitle {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.section-title--light .section-title__subtitle {
+  color: var(--accent-light);
+}
+
+.section-title__title {
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.2;
+}
+
+.section-title--light .section-title__title {
+  color: var(--white);
+}
+
+.section-title__description {
+  font-size: var(--text-lg);
+  color: var(--gray-600);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.section-title--light .section-title__description {
+  color: var(--gray-300);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title__title {
+    font-size: var(--text-3xl);
+  }
+
+  .section-title__description {
+    font-size: var(--text-base);
+  }
+}

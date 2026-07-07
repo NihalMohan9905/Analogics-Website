@@ -1,0 +1,148 @@
+/* ================================
+   Form Progress Styles - Analogics Website
+   ================================ */
+
+.form-progress {
+  margin-bottom: var(--spacing-2xl);
+  background: var(--white);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Progress Bar */
+.form-progress__bar-container {
+  height: 8px;
+  background: var(--gray-200);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: var(--spacing-xl);
+}
+
+.form-progress__bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 8px rgba(247, 147, 30, 0.3);
+}
+
+/* Steps */
+.form-progress__steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+}
+
+.form-progress__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex: 1;
+  position: relative;
+}
+
+.form-progress__step::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: var(--gray-200);
+  z-index: -1;
+}
+
+.form-progress__step:last-child::after {
+  display: none;
+}
+
+.form-progress__step--completed::after {
+  background: var(--primary);
+}
+
+/* Step Circle */
+.form-progress__step-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gray-200);
+  color: var(--gray-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: var(--text-base);
+  transition: all var(--transition-normal);
+  position: relative;
+  z-index: 1;
+}
+
+.form-progress__step--current .form-progress__step-circle {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 0 0 4px rgba(27, 79, 158, 0.2);
+  transform: scale(1.1);
+}
+
+.form-progress__step--completed .form-progress__step-circle {
+  background: var(--accent);
+  color: var(--white);
+}
+
+/* Step Label */
+.form-progress__step-label {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  text-align: center;
+  font-weight: 500;
+}
+
+.form-progress__step--current .form-progress__step-label {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.form-progress__step--completed .form-progress__step-label {
+  color: var(--gray-700);
+}
+
+/* Percentage */
+.form-progress__percentage {
+  text-align: center;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-progress {
+    padding: var(--spacing-lg);
+  }
+
+  .form-progress__step-circle {
+    width: 36px;
+    height: 36px;
+    font-size: var(--text-sm);
+  }
+
+  .form-progress__step-label {
+    font-size: var(--text-xs);
+  }
+
+  .form-progress__percentage {
+    font-size: var(--text-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .form-progress__step-label {
+    display: none;
+  }
+
+  .form-progress__step-circle {
+    width: 32px;
+    height: 32px;
+  }
+}

@@ -1,51 +1,68 @@
-# C2P Website
+# Analogics Website
 
-A modern and responsive company website developed using React.js. The project is designed to provide a clean user interface, fast performance, and an engaging user experience.
+A modern and responsive corporate website developed using **React.js** and **JavaScript** during my work as a **Web Developer at Analogics Tech Pvt Ltd**. The project focuses on delivering a clean user interface, responsive layouts, and an enhanced user experience across multiple devices.
+
+---
 
 ## Features
 
 - Responsive design for desktop, tablet, and mobile devices
-- Modern and clean user interface
-- React.js component-based architecture
-- Easy to customize and maintain
-- Optimized performance
-- Fast loading pages
+- Modern and user-friendly interface
+- Reusable React components
+- Fast and optimized performance
+- Clean and maintainable code structure
+- Cross-browser compatibility
+
+---
 
 ## Tech Stack
 
+### Frontend
 - React.js
 - JavaScript (ES6+)
 - HTML5
 - CSS3
-- Node.js
+
+### Tools
+- Git
+- GitHub
+- VS Code
 - npm
+
+---
 
 ## Project Structure
 
 ```
-c2p-website/
-│── public/
-│── src/
+Analogics-Website/
+│
+├── public/
+├── src/
 │   ├── components/
 │   ├── assets/
+│   ├── pages/
 │   ├── App.js
 │   └── index.js
-│── package.json
-│── README.md
+│
+├── package.json
+├── README.md
+└── ...
 ```
+
+---
 
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/NihalMohan9905/C2P-website.git
+git clone https://github.com/NihalMohan9905/Analogics-Website.git
 ```
 
-Navigate to the project directory:
+Navigate to the project folder:
 
 ```bash
-cd C2P-website
+cd Analogics-Website
 ```
 
 Install dependencies:
@@ -54,7 +71,9 @@ Install dependencies:
 npm install
 ```
 
-## Running the Project
+---
+
+## Run the Application
 
 Start the development server:
 
@@ -62,13 +81,15 @@ Start the development server:
 npm start
 ```
 
-The application will be available at:
+The application will run at:
 
 ```
 http://localhost:3000
 ```
 
-## Production Build
+---
+
+## Build for Production
 
 Generate an optimized production build:
 
@@ -76,28 +97,78 @@ Generate an optimized production build:
 npm run build
 ```
 
-The production files will be generated inside the `build` folder.
+The production-ready files will be created in the `build` folder.
+
+---
 
 ## Available Scripts
 
 | Command | Description |
 |---------|-------------|
-| `npm start` | Starts the development server |
-| `npm run build` | Creates a production build |
+| `npm start` | Runs the application in development mode |
+| `npm run build` | Creates an optimized production build |
 | `npm test` | Runs the test suite |
-| `npm run eject` | Ejects Create React App configuration |
-
-## Repository
-
-GitHub Repository:
-
-**https://github.com/NihalMohan9905/C2P-website**
-
-## Author
-
-**Nihal Mohan**
-
-GitHub: https://github.com/NihalMohan9905
+| `npm run eject` | Ejects the Create React App configuration |
 
 ---
 
+## Screenshots
+
+> Add screenshots of the project here.
+
+Example:
+
+```
+screenshots/
+│── home.png
+│── about.png
+│── services.png
+│── contact.png
+```
+
+```markdown
+![Home Page](screenshots/home.png)
+
+![About Page](screenshots/about.png)
+
+![Services](screenshots/services.png)
+
+![Contact](screenshots/contact.png)
+```
+
+---
+
+## Project Highlights
+
+- Developed responsive user interfaces using React.js
+- Built reusable UI components
+- Improved website usability and responsiveness
+- Followed modern frontend development practices
+- Maintained clean and scalable project architecture
+
+---
+
+## Repository
+
+GitHub Repository
+
+https://github.com/NihalMohan9905/Analogics-Website
+
+---
+
+## Author
+
+**Nihal Mohan Kasturi**
+
+**Web Developer**
+**Analogics Tech Pvt Ltd**
+
+GitHub:
+https://github.com/NihalMohan9905
+
+LinkedIn:
+https://www.linkedin.com/in/nihalkasturi
+
+---
+
+⭐ If you found this project useful, consider giving it a star.

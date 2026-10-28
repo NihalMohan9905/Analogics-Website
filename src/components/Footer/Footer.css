@@ -144,6 +144,60 @@
   color: var(--accent);
 }
 
+.footer__annual-reports summary {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--gray-300);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  list-style: none;
+}
+
+.footer__annual-reports summary::-webkit-details-marker {
+  display: none;
+}
+
+.footer__annual-reports-icon {
+  transition: transform var(--transition-fast);
+}
+
+.footer__annual-reports details[open] .footer__annual-reports-icon {
+  transform: rotate(90deg);
+}
+
+.footer__annual-reports summary:hover,
+.footer__annual-reports-years a:hover {
+  color: var(--accent);
+}
+
+.footer__annual-reports-years {
+  list-style: none;
+  padding-left: 30px;
+  margin-top: var(--spacing-sm);
+}
+
+.footer__annual-reports-years li {
+  margin-bottom: var(--spacing-xs);
+}
+
+.footer__annual-reports-years a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-300);
+  font-size: var(--text-sm);
+}
+
+.footer__annual-reports-years a::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  flex: 0 0 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
 /* Contact Info */
 .footer__contact {
   list-style: none;

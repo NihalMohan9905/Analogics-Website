@@ -47,7 +47,8 @@ const Footer = () => {
   ];
 
   const policyLinks = [
-    { name: '# Privacy Policy', path: '/privacy-policy' }
+    { name: 'Privacy Policy', path: '/privacy-policy' },
+    { name: 'Vigil Mechanism Policy', path: '/vigil-mechanism-policy' },
   ];
 
   return (
@@ -88,6 +89,18 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
+              <li className="footer__annual-reports">
+                <details>
+                  <summary>
+                    <FaChevronRight className="footer__link-icon footer__annual-reports-icon" />
+                    Annual Reports
+                  </summary>
+                  <ul className="footer__annual-reports-years">
+                    <li><Link to="/annual-reports?year=2024-2025">2024-2025</Link></li>
+                    <li><Link to="/annual-reports?year=2023-2024">2023-2024</Link></li>
+                  </ul>
+                </details>
+              </li>
             </ul>
           </div>
 

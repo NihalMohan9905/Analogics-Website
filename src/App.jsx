@@ -25,6 +25,8 @@ import Solutions from './pages/Solutions';
 import SolutionDetail from './pages/SolutionDetail';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import VigilMechanismPolicy from './pages/VigilMechanismPolicy';
+import AnnualReports from './pages/AnnualReports';
 
 // Page Styles
 import './pages/Home.css';
@@ -34,6 +36,7 @@ import './pages/ProductDetail.css';
 import './pages/Solutions.css';
 import './pages/Contact.css';
 import './pages/PrivacyPolicy.css';
+import './pages/AnnualReports.css';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -49,11 +52,22 @@ function ScrollToTop() {
 function App() {
   return (
     <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+function AppContent() {
+  const { pathname } = useLocation();
+  const isDocumentViewerPage = pathname === '/annual-reports' || pathname === '/vigil-mechanism-policy';
+
+  return (
+    <>
       <ScrollToTop />
-      <ReadingProgress />
-      <AnimatedBackground />
-      <div className="app">
-        <Header />
+      {!isDocumentViewerPage && <ReadingProgress />}
+      {!isDocumentViewerPage && <AnimatedBackground />}
+      <div className={`app${isDocumentViewerPage ? ' app--annual-reports' : ''}`}>
+        {!isDocumentViewerPage && <Header />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -65,14 +79,16 @@ function App() {
           <Route path="/solutions/:category/:id" element={<SolutionDetail />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/vigil-mechanism-policy" element={<VigilMechanismPolicy />} />
+          <Route path="/annual-reports" element={<AnnualReports />} />
           {/* Add more routes as needed */}
           <Route path="*" element={<Home />} />
         </Routes>
-        <Footer />
-        <ScrollToTopButton />
-        <ChatBot />
+        {!isDocumentViewerPage && <Footer />}
+        {!isDocumentViewerPage && <ScrollToTopButton />}
+        {!isDocumentViewerPage && <ChatBot />}
       </div>
-    </Router>
+    </>
   );
 }
 
